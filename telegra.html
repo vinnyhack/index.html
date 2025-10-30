@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Oi amor 🤭</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: url('https://i.imgur.com/bFff6AS.jpeg') no-repeat center center/cover;
+      position: relative;
+      font-family: "Poppins", sans-serif;
+      color: #fff;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    /* camada escura sobre a imagem */
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.55);
+      z-index: 1;
+    }
+
+    .content {
+      position: relative;
+      z-index: 2;
+      padding: 20px;
+      max-width: 480px;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      line-height: 1.4;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 16px 28px;
+      border: none;
+      border-radius: 14px;
+      background: linear-gradient(90deg, #ff004c, #ff6b00);
+      color: #fff;
+      font-weight: 700;
+      font-size: 1.1rem;
+      text-decoration: none;
+      cursor: pointer;
+      animation: pulse 1.8s infinite;
+      transition: transform 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.08);
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 107, 0, 0.4); }
+      70% { transform: scale(1.05); box-shadow: 0 0 20px 10px rgba(255, 107, 0, 0); }
+      100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 107, 0, 0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <h1>Oi amor🤭 você quer ver eu tirar tudinho né?<br>então vem, clica aqui👇🏻</h1>
+    <a href="https://tapthe.link/telegram1" class="btn">🌶ACESSAR CONTEÚDO🌶</a>
+  </div>
+</body>
+</html>
